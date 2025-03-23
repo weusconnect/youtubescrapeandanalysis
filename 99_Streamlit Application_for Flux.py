@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import requests
-import yt_dlp
+import yt_dlp as yt_dlp
 from googleapiclient.discovery import build
 from openai import OpenAI
 from openpyxl import load_workbook
