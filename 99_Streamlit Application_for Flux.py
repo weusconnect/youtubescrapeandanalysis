@@ -11,7 +11,8 @@ import re
 from pydub import AudioSegment  # Audio splitting
 
 # Initialize OpenAI client
-# client = OpenAI(api_key=OPENAI_API_KEY)
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
 log_file = "log.txt"
 logging.basicConfig(filename=log_file, level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
