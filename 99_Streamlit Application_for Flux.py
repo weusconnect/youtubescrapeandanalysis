@@ -176,15 +176,6 @@ def split_audio(file_path, chunk_length_ms=60000):  # Default: 60 seconds per ch
 ###################################################
 # Streamlit App Title
 st.title("Flux様 - YouTubeデータスクレーピングとダウンロードアプリ")
-st.subheader("🔐 API Key定義", divider=True)
-OPENAI_API_KEY = st.text_input("OpenAI API Keyを記入してください", type="password")
-YOUTUBE_API_KEY = st.text_input("YouTube API KeyKeyを記入してください", type="password")
-
-# Only initialize OpenAI client if key is provided
-if OPENAI_API_KEY:
-    client = OpenAI(api_key=OPENAI_API_KEY)
-else:
-    st.warning("OpenAI API Keyを記入してください")
 
 # File Upload Section
 st.subheader("ステップ1：AnnalysisChannel情報のスクレイピング設定", divider=True)
